@@ -52,7 +52,7 @@ if [ ${OS} == CentOS ];then
 fi
 
 if [ ${Debian_version} == 9 ];then
-	wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/V2ray.Fun/master/enable-debian9-rclocal.sh
+	wget -N --no-check-certificate https://raw.githubusercontent.com/goosebig/V2ray.Fun/master/enable-debian9-rclocal.sh
 	bash enable-debian9-rclocal.sh
 	rm enable-debian9-rclocal.sh
 fi
@@ -61,11 +61,11 @@ fi
 curl https://get.acme.sh | sh
 
 #Install V2ray
-curl -L -s https://install.direct/go.sh | bash
+curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh | bash
 
 #Install V2ray.Fun
 cd /usr/local/
-git clone https://github.com/FunctionClub/V2ray.Fun
+git clone https://github.com/goosebig/V2ray.Fun
 
 #Generate Default Configurations
 cd /usr/local/V2ray.Fun/ && python init.py
