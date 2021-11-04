@@ -199,7 +199,7 @@ def gen_server():
                 data['domain'], data['domain'])
         server['inbound']['streamSettings']['tlsSettings'] = server_tls
 
-    with open("/etc/v2ray/config.json", "w") as f:
+    with open("/usr/local/etc/v2ray/config.json", "w") as f:
         f.write(json.dumps(server, indent=2))
 
 
