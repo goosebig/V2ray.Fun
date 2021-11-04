@@ -132,7 +132,7 @@ fi
 sed -i "s/%%username%%/${un}/g" /usr/local/V2ray.Fun/panel.config
 sed -i "s/%%passwd%%/${pw}/g" /usr/local/V2ray.Fun/panel.config
 sed -i "s/%%port%%/${uport}/g" /usr/local/V2ray.Fun/panel.config
-chmod 777 /etc/v2ray/config.json
+chmod 777 /usr/local/etc/v2ray/config.json
 supervisord -c /etc/supervisor/supervisord.conf
 echo "supervisord -c /etc/supervisor/supervisord.conf">>/etc/rc.local
 chmod +x /etc/rc.local
