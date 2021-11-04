@@ -68,7 +68,7 @@ cd /usr/local/
 git clone https://github.com/goosebig/V2ray.Fun
 
 #Generate Default Configurations
-cd /usr/local/V2ray.Fun/ && python init.py
+cd /usr/local/V2ray.Fun/ && python3 init.py
 cp /usr/local/V2ray.Fun/v2ray.py /usr/local/bin/v2ray
 chmod +x /usr/local/bin/v2ray
 chmod +x /usr/local/V2ray.Fun/start.sh
